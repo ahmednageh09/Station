@@ -1,0 +1,13 @@
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h3 {
+    text-transform: capitalize;
+    text-align: left;
+    font: normal normal bold 20px/24px Montserrat;
+    color: #3d5161;
+  }
+}

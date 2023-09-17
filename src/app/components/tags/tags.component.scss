@@ -1,0 +1,74 @@
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  .tag {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+    width: 269px;
+    height: 163px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    &.tag-1 {
+      position: relative;
+      &::after {
+        content: "EGP";
+        position: absolute;
+        left: 170px;
+        top: 50px;
+      }
+    }
+    &.tag-2, &.tag-3 {
+      position: relative;
+      &::after {
+        content: "m³";
+        position: absolute;
+        left: 170px;
+        top: 50px;
+      }
+    }    
+
+    &:hover {
+      background-color: #f4dbd4;
+    }
+    &.tag-1,
+    &.tag-3 {
+      .sub {
+        color: #ff7f5c;
+      }
+    }
+
+    &.tag-2,
+    &.tag-4 {
+      .sub {
+        color: #00cbc0;
+      }
+    }
+    .value {
+      width: 201px;
+      text-align: left;
+      font: 40px/53px Roboto;
+      color: #3d5161;
+      text-align: left;
+    }
+    .title {
+      margin-top: -10px;
+      width: 201px;
+      height: 20px;
+      text-align: left;
+      font: normal normal bold 17px/20px Montserrat;
+      color: #3d5161;
+      text-transform: capitalize;
+    }
+    .sub {
+      width: 201px;
+      height: 21px;
+      text-align: left;
+      font: 16px/21px Roboto;
+    }
+  }
+}

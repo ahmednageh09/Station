@@ -1,0 +1,11 @@
+<div class="byStation">
+    <h3 class="title">Sales by station</h3>
+    <div class="station" *ngFor="let station of stations">
+        <div class="group">
+          <img src="/assets/station.png" alt="" />
+          <h3 class="name">{{station.stationName}}</h3>
+          <span>{{station.totalSales | number:'0.0-0'}}</span>
+        </div>
+    </div>
+</div>
+  

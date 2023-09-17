@@ -1,0 +1,63 @@
+.station {
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 10px;
+  .head {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    border-bottom: 1px solid #00000010;
+    padding: 5px;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      .icon {
+        position: relative;
+        left: 16px;
+        .circle {
+          color: #ff7f5c;
+          position: absolute;
+          font-size: 12px;
+          bottom: 0;
+          left: -20px;
+        }
+        img {
+          width: 40px;
+          padding: 0px;
+          margin: 0px;
+        }
+      }
+      h3 {
+        margin-left: 22px;
+        margin-top: 8px;
+        font: normal normal bold 18px/22px Montserrat;
+        letter-spacing: 1.8px;
+        color: #3d5161;
+        text-transform: uppercase;
+      }
+    }
+    i {
+      margin: 8px;
+    }
+  }
+  .data {
+    margin-top: 25px;
+    .details {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      li {
+        display: flex;
+        font: normal normal bold 12px/15px Montserrat;
+        color: #3d5161;
+        div {
+          margin-right: 15%;
+        }
+      }
+    }
+  }
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}

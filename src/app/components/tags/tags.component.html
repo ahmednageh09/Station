@@ -1,0 +1,15 @@
+<div class="tags container-fluid">
+  <div class="row">
+    <div
+      class="tag"
+      *ngFor="let tag of tags; let i = index"
+      [ngClass]="getTagClass(i + 1)"
+    >
+      <h3 class="value">{{ tag.value | number:'0.0-0' }}</h3>
+      <span class="title">{{ tag.title }}</span>
+      <small class="sub">
+        <i *ngIf="up" class="fa-solid fa-caret-up"></i>
+        <i *ngIf="!up" class="fa-solid fa-caret-down"></i> {{ tag.sub }}</small>
+    </div>
+  </div>
+</div>

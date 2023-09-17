@@ -1,0 +1,49 @@
+.container-fluid {
+  position: absolute;
+  overflow-x: hidden;
+  top: 100px;
+  padding-left: 90px;
+  .row {
+    display: flex;
+    justify-content: space-between;
+
+    .btns {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      align-items: center;
+      white-space: nowrap;
+
+      .change {
+        border-radius: 20px;
+        margin: 30px;
+        background-color: #ffffff;
+        button {
+          border: none;
+          outline: none;
+          border-radius: 8px;
+          text-transform: uppercase;
+          background-color: transparent;
+          height: 40px;
+          width: 100px;
+          img {
+           &.pause {
+            width: 15px;
+            margin-right: 4px;
+           } 
+          }
+          i {
+            background-color: transparent;
+          }
+          &.selected {
+            color: #ffffff;
+            background-color: #ff7f5c;
+            border: 1px solid transparent;
+            border-radius: 55px;
+            transition: ease-out 0.2s;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.byStation {
+  margin-top: 50px;
+
+  .title {
+    text-transform: capitalize;
+    text-align: center;
+    font: normal normal bold 20px/24px Montserrat;
+    color: #3d5161;
+    margin-bottom: 50px;
+  }
+
+  .station {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      img {
+        width: 40px;
+        margin-right: 8px;
+      }
+
+      .name {
+        text-transform: capitalize;
+        font-size: 12px;
+        color: #000000;
+        margin-right: 20px;
+      }
+       span {
+        position: relative;
+        &::after {
+          content: "m³";
+          position: absolute;
+        }
+       } 
+
+      &::after {
+        content: " ";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, #ff7f5c 60%, #ff7f5c40 40%);
+      }
+    }
+  }
+}
+

@@ -1,0 +1,25 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-8">
+      <app-tags></app-tags>
+      <div class="btns">
+        <div class="change">
+          <button (click)="displayGraph = true" [class.selected]="displayGraph">
+            <img src="/assets/stat.png" alt="" /> graph
+          </button>
+          <button
+            (click)="displayGraph = false"
+            [class.selected]="!displayGraph"
+          >
+            <img class="pause" src="/assets/pause.png" />list
+          </button>
+        </div>
+      </div>
+      <div>
+        <app-stations *ngIf="!displayGraph"></app-stations>
+        <app-bar-chart *ngIf="displayGraph"></app-bar-chart>
+      </div>
+    </div>
+    <app-aside class="col-4"></app-aside>
+  </div>
+</div>

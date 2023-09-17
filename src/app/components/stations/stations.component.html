@@ -1,0 +1,42 @@
+<div class="station" *ngFor="let station of stations; let i = index">
+  <div class="head">
+    <div class="title">
+      <div class="icon">
+        <i class="fa-solid fa-circle circle"></i>
+        <img src="/assets/station.png" alt="" />
+      </div>
+      <h3>station name dummy</h3>
+    </div>
+    <i class="fa-solid fa-ellipsis" (click)="openStationDialog($event)"></i>
+  </div>
+  <div class="data">
+    <ul class="details">
+      <li class="col-4">
+        <div>Total Sales</div>
+        <span>{{ station.totalSales | number:'0.0-0' }}</span>
+      </li>
+      <li class="col-4">
+        <div>Compression State</div>
+        <span>{{ station.comoressionState }}</span>
+      </li>
+      <li class="col-4">
+        <div>Max Transaction/hour</div>
+        <span>{{ station.maxTransactionHour }}</span>
+      </li>
+    </ul>
+    <ul class="details">
+      <li class="col-4">
+        <div>Total Value</div>
+        <span>{{ station.totalValue }}</span>
+      </li>
+      <li class="col-4">
+        <div>Total Transaction Count</div>
+        <span>{{ station.totalTransactionCount }}</span>
+      </li>
+      <li class="col-4">
+        <div>Max Transactin Date-Time</div>
+        <span>{{ station.maxTransaxtionDate }}</span>
+      </li>
+    </ul>
+  </div>
+</div>
